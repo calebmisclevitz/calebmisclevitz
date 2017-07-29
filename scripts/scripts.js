@@ -25,13 +25,17 @@ $(document).ready(function() {
     
     $('.fine').removeClass('fine--hover', 'fine--clicked');
     
-    $('.fine').mouseenter(function(){
-        $('.fine').addClass('fine--hover');
-    })
+    if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+        $('.fine').mouseenter(function(){
+            $('.fine').addClass('fine--hover');
+        })
+
+        $('.fine').mouseleave(function(){
+            $('.fine').removeClass('fine--hover');
+        })
+    }
     
-    $('.fine').mouseleave(function(){
-        $('.fine').removeClass('fine--hover');
-    })
+
     
     $('.fine').click(function(e){
         e.preventDefault;
