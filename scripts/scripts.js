@@ -8,9 +8,9 @@ $(document).ready(function() {
         
         console.log(scrolltop);
 
-        scrolltop = Math.round(scrolltop / 100);
+        scrolltop = Math.round(scrolltop / 50);
 
-        image_num = scrolltop%10;
+        image_num = scrolltop%12;
 
         $('.work').css('background-image', 'url("work/' + image_num + '.jpg")');   
 

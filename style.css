@@ -207,7 +207,7 @@ a {
     background-size: cover;
 /*    background-attachment: fixed;*/
 /*    background-image: url('work/1.jpg');*/
-/*    width: 200%;*/
+    width: 200%;
     transition: background-image 50ms ease;
 }
 
