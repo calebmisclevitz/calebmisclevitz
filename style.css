@@ -217,8 +217,8 @@ a {
     padding-bottom: 90%;
     border-radius: 50%;
     background-attachment: fixed;
-/*    background-position: center;*/
-    background-size: cover;
+    background-position: center;
+    background-size: 130% auto;
     -moz-box-shadow:    inset 0 0 50px rgba(0,0,0,.25);
     -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,.25);
     box-shadow:         inset 0 0 50px rgba(0,0,0,.25);
