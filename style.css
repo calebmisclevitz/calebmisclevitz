@@ -162,6 +162,31 @@ a {
 }
 
 
+  @-webkit-keyframes bounce {
+    0%       { transform: translateX(0) }
+    50%      { transform: translateX(10px) }
+    100%     { transform: translateX(0) }
+  }
+  
+   @-moz-keyframes bounce {
+    0%       { transform: translateX(0) }
+    50%      { transform: translateX(10px) }
+    100%     { transform: translateX(0) }
+  }
+  
+   @-o-keyframes bounce {
+    0%       { transform: translateX(0) }
+    50%      { transform: translateX(10px) }
+    100%     { transform: translateX(0) }
+  }
+  
+   @keyframes bounce {
+    0%       { transform: translateX(0) }
+    50%      { transform: translateX(10px) }
+    100%     { transform: translateX(0) }
+  }
+
+
 /* Layout */
 
 .half {
@@ -207,6 +232,14 @@ a {
 /*    margin-right: -10vw;*/
 }
 
+.arrow {
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+    -webkit-animation:bounce 2s infinite;
+    -moz-animation:bounce 2s infinite;
+    -o-animation:bounce 2s infinite;
+    animation:bounce 2s infinite;
+}
 
 /* Work */
 
