@@ -25,17 +25,20 @@ $(document).ready(function() {
     
     $('.fine').removeClass('fine--hover', 'fine--clicked');
     
-//    $('.fine').hover(function(){
-//        $('.fine').toggleClass('fine--hover');
-//    })
+    $('.fine').mouseenter(function(){
+        $('.fine').addClass('fine--hover');
+    })
+    
+    $('.fine').mouseleave(function(){
+        $('.fine').removeClass('fine--hover');
+    })
     
     $('.fine').click(function(e){
-//        e.preventDefault;
-//        var link = $(this).attr("href");
+        e.preventDefault;
         $('.fine').toggleClass('fine--clicked');
-//        setTimeout(function() {
-//            window.location.href = 'http://www.wearefine.com';
-//        }, 200);
+        setTimeout(function() {
+            window.location.href = 'http://www.wearefine.com';
+        }, 400);
     })
     
 });
