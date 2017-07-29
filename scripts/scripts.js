@@ -30,12 +30,12 @@ $(document).ready(function() {
     })
     
     $('.fine').click(function(e){
-        e.preventDefault;
-        var link = $(this).attr("href");
+//        e.preventDefault;
+//        var link = $(this).attr("href");
         $('.fine').toggleClass('fine--clicked');
-        setTimeout(function() {
-            window.location.href = 'http://www.wearefine.com';
-        }, 200);
+//        setTimeout(function() {
+//            window.location.href = 'http://www.wearefine.com';
+//        }, 200);
     })
     
 });
