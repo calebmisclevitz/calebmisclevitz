@@ -213,10 +213,9 @@ a {
 }
 
 .piece {
-    width: 90%;
-    height: 90%;
-/*    padding-bottom: 70%;*/
-/*    border-radius: 50%;*/
+    width: 70%;
+    padding-bottom: 70%;
+    border-radius: 50%;
 /*    background-color: black;*/
 /*    background-attachment: fixed;*/
     background-position: center;
