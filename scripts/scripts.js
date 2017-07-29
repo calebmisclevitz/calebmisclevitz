@@ -10,7 +10,7 @@ $(document).ready(function() {
         
         scrolltop = Math.round(scrolltop / 20);
 
-        image_num = scrolltop%12;
+        image_num = scrolltop%13;
         console.log(image_num);
         
 
