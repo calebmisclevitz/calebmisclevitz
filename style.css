@@ -21,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+/*	font-size: 100%;*/
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -61,8 +61,8 @@ table {
 /* EMOJI */
 
 .em {
-    height:2em;
-    width:2em;
+    height:32px;
+    width:32px;
     background-position:center;
     background-repeat:no-repeat;
     background-size:contain;
@@ -91,11 +91,13 @@ table {
 
 html {
     font-family: fugue;
-    font-size: 1em;
+    font-size: 16px;
     color: #00f;
     letter-spacing: .05em;
     width: 100%;
     height: 100%;
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+
 }
 
 
