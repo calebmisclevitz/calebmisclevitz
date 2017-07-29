@@ -259,9 +259,11 @@ a {
 }
 
 
+/*
 .fine--hover:after {
     transform: scaleX(.8) translateX(-5px);
 }
+*/
 
 .fine--clicked:after {
     transform: scaleX(4) translateX(200px);

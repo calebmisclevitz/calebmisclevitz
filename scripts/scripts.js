@@ -25,9 +25,9 @@ $(document).ready(function() {
     
     $('.fine').removeClass('fine--hover', 'fine--clicked');
     
-    $('.fine').hover(function(){
-        $('.fine').toggleClass('fine--hover');
-    })
+//    $('.fine').hover(function(){
+//        $('.fine').toggleClass('fine--hover');
+//    })
     
     $('.fine').click(function(e){
 //        e.preventDefault;
