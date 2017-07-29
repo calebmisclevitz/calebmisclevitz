@@ -187,12 +187,13 @@ a {
 
 .mantle {
     align-items: flex-end;
+    padding: 10vw 0 10vw 10vw;
 }
 
 .photo {
     width: 150px;
     height: 150px;
-    margin-right: -10vw;
+/*    margin-right: -10vw;*/
 }
 
 
