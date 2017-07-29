@@ -23,4 +23,19 @@ $(document).ready(function() {
         $('.PIECE').css('background-position', 'top ' + ((scrolledY)) + 'px');
     });
     
+    $('.fine').removeClass('fine--hover', 'fine--clicked');
+    
+    $('.fine').hover(function(){
+        $('.fine').toggleClass('fine--hover');
+    })
+    
+    $('.fine').click(function(e){
+        e.preventDefault;
+        var link = $(this).attr("href");
+        $('.fine').toggleClass('fine--clicked');
+        setTimeout(function() {
+            window.location.href = 'http://www.wearefine.com';
+        }, 200);
+    })
+    
 });

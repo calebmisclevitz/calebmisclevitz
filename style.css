@@ -113,10 +113,6 @@ body {
     -webkit-scroll-snap-points-x: repeat(100%);
 }
 
-@media only screen and (min-width : 320px) and (max-width : 560px) {
-	body {-webkit-text-size-adjust: 100%;}
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -218,11 +214,8 @@ a {
 
 .piece {
     width: 100%;
-    max-height: 100vh;
     padding-bottom: 100%;
     border-radius: 50%;
-/*    background-color: black;*/
-/*    background-attachment: left top;*/
     background-position: 50%;
     background-size: cover;
     -moz-box-shadow:    inset 0 0 50px rgba(0,0,0,.25);
@@ -252,6 +245,7 @@ a {
 
 .fine {
     display: inline-block;
+    cursor: pointer;
 }
 
 .fine:after {
@@ -265,18 +259,15 @@ a {
 }
 
 
-.fine:hover:after {
+.fine--hover:after {
     transform: scaleX(.8) translateX(-5px);
 }
 
-.fine:active:after {
+.fine--clicked:after {
     transform: scaleX(4) translateX(200px);
-    opacity: 0;    
+/*    opacity: 0;*/
 }
 
-.fine:hover {
-/*    transform: translateY(-3px);*/
-}
 
 /* Contact */
 
@@ -289,4 +280,29 @@ a {
 
 .time {
     margin-bottom: 1em;
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width : 320px) and (max-width : 560px) {
+	body {-webkit-text-size-adjust: 100%;}
+}
+
+@media only screen and (orientation : landscape) {
+    body {
+
+    }
+    
+    .work {
+    }
+    
+    .piece {
+        width: 50%;
+        padding: 0 0 50% 0;
+    }
+    
+    .career {
+        flex-direction: row;
+    }
 }
